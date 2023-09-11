@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a71e9c535a6d6bed561edccf9cdcf6d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a71e9c535a6d6bed561edccf9cdcf6d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a71e9c535a6d6bed561edccf9cdcf6d6 = L.map(
+                "map_a71e9c535a6d6bed561edccf9cdcf6d6",
+                {
+                    center: [25.699971, -100.3104298],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2d9ba9373188fd9657b265e9269aaeb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a71e9c535a6d6bed561edccf9cdcf6d6);
+        
+    
+            var marker_79b34d547f278dbd381fb8158e3599fa = L.marker(
+                [25.699971, -100.3104298],
+                {}
+            ).addTo(map_a71e9c535a6d6bed561edccf9cdcf6d6);
+        
+    
+            var icon_28563195b7554c07024e1d8668d2ea85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_79b34d547f278dbd381fb8158e3599fa.setIcon(icon_28563195b7554c07024e1d8668d2ea85);
+        
+    
+        var popup_c8bf62a17bf8b79d86e4ed0c394afebf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd000ddf3a7599a1eec57334cd8e20e6 = $(`<div id="html_bd000ddf3a7599a1eec57334cd8e20e6" style="width: 100.0%; height: 100.0%;">Begoña Hotel</div>`)[0];
+                popup_c8bf62a17bf8b79d86e4ed0c394afebf.setContent(html_bd000ddf3a7599a1eec57334cd8e20e6);
+            
+        
+
+        marker_79b34d547f278dbd381fb8158e3599fa.bindPopup(popup_c8bf62a17bf8b79d86e4ed0c394afebf)
+        ;
+
+        
+    
+</script>
+</html>

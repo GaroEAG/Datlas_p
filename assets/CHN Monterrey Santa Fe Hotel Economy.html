@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2acb9fdbfdda8f0b01f6ee3fd9c173b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2acb9fdbfdda8f0b01f6ee3fd9c173b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2acb9fdbfdda8f0b01f6ee3fd9c173b5 = L.map(
+                "map_2acb9fdbfdda8f0b01f6ee3fd9c173b5",
+                {
+                    center: [25.7237581, -100.3433342],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65cde1a7efeb3b5c3119df87d4a36e51 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2acb9fdbfdda8f0b01f6ee3fd9c173b5);
+        
+    
+            var marker_51e264f9d510a4ea2fbb97533b961198 = L.marker(
+                [25.7237581, -100.3433342],
+                {}
+            ).addTo(map_2acb9fdbfdda8f0b01f6ee3fd9c173b5);
+        
+    
+            var icon_fe8458b85c13a8c0ad192eb0739120d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51e264f9d510a4ea2fbb97533b961198.setIcon(icon_fe8458b85c13a8c0ad192eb0739120d4);
+        
+    
+        var popup_ea1a85a519edbf68f3890beb1a5a8dca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f84e2c3073b25646289ca3b15c001b9 = $(`<div id="html_8f84e2c3073b25646289ca3b15c001b9" style="width: 100.0%; height: 100.0%;">CHN Monterrey Santa Fe Hotel Economy</div>`)[0];
+                popup_ea1a85a519edbf68f3890beb1a5a8dca.setContent(html_8f84e2c3073b25646289ca3b15c001b9);
+            
+        
+
+        marker_51e264f9d510a4ea2fbb97533b961198.bindPopup(popup_ea1a85a519edbf68f3890beb1a5a8dca)
+        ;
+
+        
+    
+</script>
+</html>
